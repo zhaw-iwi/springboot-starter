@@ -1,4 +1,4 @@
-package ch.zhaw.infm.springboottemplate.restcontroller;
+package ch.zhaw.springboot.restcontroller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import ch.zhaw.infm.springboottemplate.entities.Infection;
-import ch.zhaw.infm.springboottemplate.entities.Person;
-import ch.zhaw.infm.springboottemplate.repositories.InfectionRepository;
+import ch.zhaw.springboot.entities.Infection;
+import ch.zhaw.springboot.entities.Person;
+import ch.zhaw.springboot.repositories.InfectionRepository;
 
 @RestController
 public class InfectionRestController {

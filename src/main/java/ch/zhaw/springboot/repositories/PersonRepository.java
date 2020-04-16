@@ -1,8 +1,8 @@
-package ch.zhaw.infm.springboottemplate.repositories;
+package ch.zhaw.springboot.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import ch.zhaw.infm.springboottemplate.entities.Person;
+import ch.zhaw.springboot.entities.Person;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
 

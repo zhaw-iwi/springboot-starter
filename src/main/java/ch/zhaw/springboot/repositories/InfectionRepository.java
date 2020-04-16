@@ -1,12 +1,12 @@
-package ch.zhaw.infm.springboottemplate.repositories;
+package ch.zhaw.springboot.repositories;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import ch.zhaw.infm.springboottemplate.entities.Infection;
-import ch.zhaw.infm.springboottemplate.entities.Person;
+import ch.zhaw.springboot.entities.Infection;
+import ch.zhaw.springboot.entities.Person;
 
 public interface InfectionRepository extends JpaRepository<Infection, Long> {
 

@@ -1,4 +1,4 @@
-package ch.zhaw.infm.springboottemplate.restcontroller;
+package ch.zhaw.springboot.restcontroller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import ch.zhaw.infm.springboottemplate.entities.Pathogen;
-import ch.zhaw.infm.springboottemplate.repositories.PathogenRepository;
+import ch.zhaw.springboot.entities.Pathogen;
+import ch.zhaw.springboot.repositories.PathogenRepository;
 
 @RestController
 public class PathogenRestController {

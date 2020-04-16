@@ -1,4 +1,4 @@
-package ch.zhaw.infm.springboottemplate.entities;
+package ch.zhaw.springboot.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
