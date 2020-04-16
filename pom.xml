@@ -3,6 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Group-ID, artifact ID and version of the project. You can modify these 
+		as you want -->
 	<groupId>ch.zhaw.springboot</groupId>
 	<artifactId>spring-boot-starter</artifactId>
 	<name>Spring Boot Starter</name>
