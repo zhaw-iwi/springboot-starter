@@ -9,8 +9,19 @@
 		<script>
 			function go()	{
 				syso("> Running ...");
+				
+				city = document.getElementById("inputLocation").value;
+				pathogen = document.getElementById("inputPathogen").value;
+				
+				var query;
+				if (city && pathogen)	{
+					query = "infections/" + city + "/" + pathogen;
+				} else	{
+					alert("No location or pathogen was entered - listing all persons");
+					query = "persons";
+				}
 
-				$.get('http://localhost:8080/infections/persons', function(response) {
+				$.get('http://localhost:8080/infections/' + query, function(response) {
 					 displayPersons(response);
 				});
 
@@ -18,6 +29,7 @@
 			}
 			
 			function displayPersons(persons)	{
+				document.getElementById("personTable").innerHTML = "";7
 				persons.forEach(displayPerson);
 			}
 			
@@ -45,9 +57,14 @@
 
 			<form>
 				<div class="form-group">
-					<label for="inputField">Input Field</label>
-					<input type="text" class="form-control" id="inputField" aria-describedby="inputHelp" placeholder="Enter Input">
-					<small id="inputHelp" class="form-text text-muted">Please enter an input value.</small>
+					<label for="inputLocation">Location</label>
+					<input type="text" class="form-control" id="inputLocation" aria-describedby="inputHelp" placeholder="Enter Location">
+					<small id="inputHelp" class="form-text text-muted">Please enter a location, e.g. Villarrica</small>
+				</div>
+				<div class="form-group">
+					<label for="inputPathogen">Pathogen</label>
+					<input type="text" class="form-control" id="inputPathogen" aria-describedby="inputHelp" placeholder="Enter Pathogen">
+					<small id="inputHelp" class="form-text text-muted">Please enter a pathogen, e.g. I69228</small>
 				</div>
 				<button type="button" class="btn btn-primary" onclick="go()">Go :-)</button>
 			</form>
