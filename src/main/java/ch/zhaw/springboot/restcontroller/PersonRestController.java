@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import ch.zhaw.springboot.entities.Pathogen;
 import ch.zhaw.springboot.entities.Person;
 import ch.zhaw.springboot.repositories.PersonRepository;
 
