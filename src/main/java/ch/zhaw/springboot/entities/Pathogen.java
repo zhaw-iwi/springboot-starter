@@ -23,6 +23,10 @@ public class Pathogen {
 	public Pathogen() {
 	}
 
+	public long getId() {
+		return this.id;
+	}
+
 	public String getIcd10() {
 		return this.icd10;
 	}

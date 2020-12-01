@@ -31,6 +31,10 @@ public class Infection {
 	public Infection() {
 	}
 
+	public long getId() {
+		return this.id;
+	}
+
 	public long getTime() {
 		return this.time;
 	}
